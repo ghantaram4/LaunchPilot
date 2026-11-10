@@ -1,0 +1,31 @@
+FICTIONAL SAMPLE SOURCE - stored text extraction, not the original PDF.
+Original source: FICTIONAL_event_brief.pdf; page 1; source ID brief:p1.
+Original PDF SHA-256: fc1400aa888bdbee8299b91016769e24fc68d97b10d45b8d9c60f9d65fc63e16
+The following is the exact stored extraction, including its line wrapping.
+
+Fictional event brief | LaunchPilot upload test
+1
+Event brief
+FICTIONAL DEMO - this is not a real event. The registration link is a placeholder.
+event_name: Northstar College Portfolio Lab
+date: 2027-03-13
+start_time: 10:00
+end_time: 12:30
+timezone: Asia/Kolkata
+venue: Seminar Hall B, Northstar College, Fictional City
+price: Free
+registration_url: https://events.example.org/northstar-portfolio-demo
+audience: Northstar College final-year undergraduate students
+tone: Friendly, practical and clear; avoid hype and guarantees
+Event description:
+The Northstar College Portfolio Lab is a student-led workshop about presenting academic projects in a
+personal portfolio. The student organizing team will facilitate a portfolio-structure discussion, a short
+project-description writing exercise, and a peer feedback activity.
+Participants should bring notes about one academic project. No prior portfolio-building experience is
+required. Bringing a laptop is optional. Registration is restricted to Northstar College final-year
+undergraduate students.
+There are no confirmed guest speakers, sponsors, certificates, prizes, food arrangements, capacity
+limits, registration deadlines, placement offers or guaranteed career outcomes. These details are not
+part of the supplied event plan.
+The event date, time, venue, price and registration link in the calendar are identical to this brief. This
+source pack describes exactly one fictional event.

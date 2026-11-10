@@ -1,0 +1,17 @@
+FICTIONAL DEMO — NOT A REAL EVENT
+This invented event exists only to demonstrate LaunchPilot. The college, event, venue and registration URL are fictional. No audience or campaign results are claimed.
+
+event_name: Aster College Campus Ideas Lab
+date: 2027-02-20
+start_time: 14:00
+end_time: 17:00
+timezone: Asia/Kolkata
+venue: Innovation Studio, Aster College, Fictional City
+price: Free
+registration_url: https://events.example.org/aster-ideas-demo
+audience: Aster College undergraduate students interested in creative problem-solving
+tone: Welcoming, clear and curious; avoid hype and guarantees
+
+The Campus Ideas Lab is a student-led college workshop about creative problem-solving. Activities include a guided idea-mapping exercise, small-group discussion and a peer feedback circle. Participants are invited to bring a campus challenge they would like to explore. No prior workshop experience is required. The student organizing committee will facilitate the activities.
+
+There are no confirmed speakers, sponsors, prizes, certificates, capacity limits, food, placements or guaranteed outcomes. Do not add these to promotional material. This sentence describes the limits of the fictional event facts.

@@ -1,0 +1,386 @@
+{
+  "scope": "Final Project D submission - this Northstar fictional campaign only",
+  "campaign_id": "e71f3548-b1c2-4969-9841-396ef719c46d",
+  "fictional_only": true,
+  "read_only_verification": true,
+  "saved_version": 5,
+  "graph_status": "awaiting_human_review",
+  "approval_state_is_separate_from_graph_status": true,
+  "content_approval": {
+    "version": 5,
+    "digest": "de725b4a83ecc2c476856199982753e84cef72ed5fd0b139bfd82f9a9777d835",
+    "human_reviewed": true
+  },
+  "export_approval": {
+    "version": 5,
+    "digest": "de725b4a83ecc2c476856199982753e84cef72ed5fd0b139bfd82f9a9777d835"
+  },
+  "current_draft_digest": "de725b4a83ecc2c476856199982753e84cef72ed5fd0b139bfd82f9a9777d835",
+  "timestamps_ist": {
+    "created_and_consented": "2026-11-08T13:15:15.786+05:30",
+    "generation_finished": "2026-11-08T13:32:42.804+05:30",
+    "content_approved_v5": "2026-11-08T14:04:15.234+05:30",
+    "export_approved_v5": "2026-11-08T14:04:17.129+05:30",
+    "campaign_expires": "2026-11-15T13:15:15.786+05:30"
+  },
+  "timing_seconds": {
+    "saved_active_processing": 41.48499999998603,
+    "provider_worker_total": 26.890000000130385,
+    "provider_worker_failed": 10.562000000150874,
+    "provider_worker_successful": 16.32799999997951,
+    "last_successful_segment_wall": 29.78398299217224,
+    "creation_to_generation_elapsed": 1047.0182054042816,
+    "creation_to_content_approval_elapsed": 2939.4487776756287,
+    "creation_to_export_approval_elapsed": 2941.343465566635
+  },
+  "provider_attempts": 8,
+  "failed_attempts": 4,
+  "successful_attempts": 4,
+  "known_reported_usage": {
+    "input_tokens": 6922,
+    "output_tokens": 1572,
+    "total_tokens": 8494
+  },
+  "attempts_with_unknown_usage": 4,
+  "monetary_charge": "not reported or verified",
+  "limits": {
+    "max_attempts": 8,
+    "max_active_seconds": 180.0,
+    "attempts_remaining": 0
+  },
+  "calls": [
+    {
+      "id": 1,
+      "stage": "research",
+      "status": "failed",
+      "started_ist": "2026-11-08T13:15:15.910+05:30",
+      "worker_seconds": 2.655999999959022,
+      "reported_usage": null,
+      "error_class": "OpenAIConnectionError"
+    },
+    {
+      "id": 2,
+      "stage": "research",
+      "status": "failed",
+      "started_ist": "2026-11-08T13:15:19.069+05:30",
+      "worker_seconds": 2.8280000000959262,
+      "reported_usage": null,
+      "error_class": "OpenAIConnectionError"
+    },
+    {
+      "id": 3,
+      "stage": "research",
+      "status": "failed",
+      "started_ist": "2026-11-08T13:19:42.470+05:30",
+      "worker_seconds": 2.5630000000819564,
+      "reported_usage": null,
+      "error_class": "OpenAIConnectionError"
+    },
+    {
+      "id": 4,
+      "stage": "research",
+      "status": "failed",
+      "started_ist": "2026-11-08T13:19:45.550+05:30",
+      "worker_seconds": 2.51500000001397,
+      "reported_usage": null,
+      "error_class": "OpenAIConnectionError"
+    },
+    {
+      "id": 5,
+      "stage": "research",
+      "status": "success",
+      "started_ist": "2026-11-08T13:32:13.020+05:30",
+      "worker_seconds": 3.1089999999385327,
+      "reported_usage": {
+        "input_tokens": 271,
+        "output_tokens": 41,
+        "total_tokens": 312,
+        "input_token_details": {
+          "cache_read": 80
+        },
+        "output_token_details": {}
+      },
+      "error_class": null
+    },
+    {
+      "id": 6,
+      "stage": "plan",
+      "status": "success",
+      "started_ist": "2026-11-08T13:32:29.543+05:30",
+      "worker_seconds": 4.609000000054948,
+      "reported_usage": {
+        "input_tokens": 2099,
+        "output_tokens": 673,
+        "total_tokens": 2772,
+        "input_token_details": {
+          "cache_read": 64
+        },
+        "output_token_details": {}
+      },
+      "error_class": null
+    },
+    {
+      "id": 7,
+      "stage": "draft",
+      "status": "success",
+      "started_ist": "2026-11-08T13:32:34.177+05:30",
+      "worker_seconds": 5.0,
+      "reported_usage": {
+        "input_tokens": 1766,
+        "output_tokens": 670,
+        "total_tokens": 2436,
+        "input_token_details": {
+          "cache_read": 64
+        },
+        "output_token_details": {}
+      },
+      "error_class": null
+    },
+    {
+      "id": 8,
+      "stage": "review:0",
+      "status": "success",
+      "started_ist": "2026-11-08T13:32:39.191+05:30",
+      "worker_seconds": 3.60999999998603,
+      "reported_usage": {
+        "input_tokens": 2786,
+        "output_tokens": 188,
+        "total_tokens": 2974,
+        "input_token_details": {
+          "cache_read": 64
+        },
+        "output_token_details": {}
+      },
+      "error_class": null
+    }
+  ],
+  "retrieval": {
+    "tool": "retrieve_sources",
+    "query": "event brief calendar row",
+    "hits": [
+      {
+        "chunk_id": "calendar:r2:c0",
+        "source_id": "calendar:r2",
+        "page": 0,
+        "csv_row": 2,
+        "tokens_including_special": 98,
+        "start_char": 0,
+        "end_char": 381,
+        "source_sha256": "ac7fbd7e1e16e0c751679d52f593fc797b89b405dfa60c1674aa104537121df9"
+      },
+      {
+        "chunk_id": "brief:p1:c0",
+        "source_id": "brief:p1",
+        "page": 1,
+        "csv_row": 0,
+        "tokens_including_special": 222,
+        "start_char": 0,
+        "end_char": 1085,
+        "source_sha256": "fc1400aa888bdbee8299b91016769e24fc68d97b10d45b8d9c60f9d65fc63e16"
+      },
+      {
+        "chunk_id": "brief:p1:c196",
+        "source_id": "brief:p1",
+        "page": 1,
+        "csv_row": 0,
+        "tokens_including_special": 91,
+        "start_char": 943,
+        "end_char": 1439,
+        "source_sha256": "fc1400aa888bdbee8299b91016769e24fc68d97b10d45b8d9c60f9d65fc63e16"
+      }
+    ]
+  },
+  "source_provenance": [
+    {
+      "id": "brief:p1",
+      "original_filename": "FICTIONAL_event_brief.pdf",
+      "page": 1,
+      "csv_row": 0,
+      "original_upload_sha256": "fc1400aa888bdbee8299b91016769e24fc68d97b10d45b8d9c60f9d65fc63e16"
+    },
+    {
+      "id": "calendar:r2",
+      "original_filename": "FICTIONAL_event_calendar.csv",
+      "page": 0,
+      "csv_row": 2,
+      "original_upload_sha256": "ac7fbd7e1e16e0c751679d52f593fc797b89b405dfa60c1674aa104537121df9"
+    }
+  ],
+  "checkpoint_timeline": [
+    {
+      "timestamp_ist": "2026-11-08T13:15:15.901+05:30",
+      "step": -1,
+      "status": null,
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:15:15.902+05:30",
+      "step": 0,
+      "status": null,
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:15:21.917+05:30",
+      "step": 1,
+      "status": "handoff",
+      "failure_kind": "provider",
+      "failure_message": "Nebius request failed (OpenAIConnectionError). This stage is paused; completed stages are retained. Retry explicitly when the provider is available."
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:19:42.459+05:30",
+      "step": 2,
+      "status": "resuming",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:19:48.075+05:30",
+      "step": 3,
+      "status": "handoff",
+      "failure_kind": "provider",
+      "failure_message": "Nebius request failed (OpenAIConnectionError). This stage is paused; completed stages are retained. Retry explicitly when the provider is available."
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:13.020+05:30",
+      "step": 4,
+      "status": "resuming",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:16.156+05:30",
+      "step": 5,
+      "status": "retrieving",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:29.527+05:30",
+      "step": 6,
+      "status": "planning",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:34.159+05:30",
+      "step": 7,
+      "status": "checking_facts",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:34.159+05:30",
+      "step": 8,
+      "status": "drafting",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:39.173+05:30",
+      "step": 9,
+      "status": "reviewing",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:42.795+05:30",
+      "step": 10,
+      "status": "reviewed",
+      "failure_kind": null,
+      "failure_message": null
+    },
+    {
+      "timestamp_ist": "2026-11-08T13:32:42.804+05:30",
+      "step": 11,
+      "status": "awaiting_human_review",
+      "failure_kind": null,
+      "failure_message": null
+    }
+  ],
+  "working_version_audit": [
+    {
+      "action": "edit_invalidated_approvals",
+      "version": 2,
+      "at_ist": "2026-11-08T13:39:26.422+05:30",
+      "draft_digest": null
+    },
+    {
+      "action": "edit_invalidated_approvals",
+      "version": 3,
+      "at_ist": "2026-11-08T13:45:33.131+05:30",
+      "draft_digest": null
+    },
+    {
+      "action": "edit_invalidated_approvals",
+      "version": 4,
+      "at_ist": "2026-11-08T13:49:37.581+05:30",
+      "draft_digest": null
+    },
+    {
+      "action": "content_approved",
+      "version": 4,
+      "at_ist": "2026-11-08T13:51:51.937+05:30",
+      "draft_digest": "c2698abc2e7669012522a122a6a6f1a4a8caac14011e940d2145863eed59e994"
+    },
+    {
+      "action": "export_approved",
+      "version": 4,
+      "at_ist": "2026-11-08T13:51:54.378+05:30",
+      "draft_digest": "c2698abc2e7669012522a122a6a6f1a4a8caac14011e940d2145863eed59e994"
+    },
+    {
+      "action": "content_approved",
+      "version": 4,
+      "at_ist": "2026-11-08T13:54:17.406+05:30",
+      "draft_digest": "c2698abc2e7669012522a122a6a6f1a4a8caac14011e940d2145863eed59e994"
+    },
+    {
+      "action": "export_approved",
+      "version": 4,
+      "at_ist": "2026-11-08T13:54:19.243+05:30",
+      "draft_digest": "c2698abc2e7669012522a122a6a6f1a4a8caac14011e940d2145863eed59e994"
+    },
+    {
+      "action": "edit_invalidated_approvals",
+      "version": 5,
+      "at_ist": "2026-11-08T13:59:05.361+05:30",
+      "draft_digest": null
+    },
+    {
+      "action": "content_approved",
+      "version": 5,
+      "at_ist": "2026-11-08T14:04:15.234+05:30",
+      "draft_digest": "de725b4a83ecc2c476856199982753e84cef72ed5fd0b139bfd82f9a9777d835"
+    },
+    {
+      "action": "export_approved",
+      "version": 5,
+      "at_ist": "2026-11-08T14:04:17.129+05:30",
+      "draft_digest": "de725b4a83ecc2c476856199982753e84cef72ed5fd0b139bfd82f9a9777d835"
+    }
+  ],
+  "model_review_issues_original": [],
+  "automated_revisions": 0,
+  "live_clarification_history": [],
+  "pending_questions": [],
+  "current_deterministic_critical_fact_issues": [],
+  "historical_failure_root_cause": "Unknown: old worker discarded the chained exception. Separate source-free restricted-context probes observed WinError 10013; normal-context HEAD reached HTTP 405 over TLS.",
+  "sample_output": {
+    "file": "SAMPLE_OUTPUT_FICTIONAL_APPROVED_v5.md",
+    "kind": "byte-for-byte copy of existing approved download",
+    "bytes": 6067,
+    "sha256": "56ce9f7b5e2bb22cd7e17f98855a8445b2452f390c66f911c0e4c2c969a8cd8c",
+    "fictional_labels_preserved": true
+  },
+  "package_actions": {
+    "new_provider_calls": 0,
+    "regeneration": false,
+    "new_campaign": false,
+    "campaign_edit": false,
+    "new_approval": false,
+    "fresh_campaign_export": false,
+    "push_or_publish": false
+  }
+}

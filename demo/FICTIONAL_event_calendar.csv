@@ -1,0 +1,2 @@
+event_id,event_name,date,start_time,end_time,timezone,venue,price,registration_url,audience,tone
+fictional-aster-demo,Aster College Campus Ideas Lab,2027-02-20,14:00,17:00,Asia/Kolkata,"Innovation Studio, Aster College, Fictional City",Free,https://events.example.org/aster-ideas-demo,Aster College undergraduate students interested in creative problem-solving,"Welcoming, clear and curious; avoid hype and guarantees"
