@@ -1,6 +1,6 @@
 # Project D submission: LaunchPilot
 
-**Independent GTM agent for English college-event campaigns.** This is the source text for the required Google Doc. The [GitHub repository](https://github.com/ghantaram4/LaunchPilot) is uploaded. The [Google Doc](https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY) is prepared; its reviewer access must still be enabled. The recording link remains pending in [submission/CHECKLIST.md](submission/CHECKLIST.md) and [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The sample and campaign measurements below describe the saved 8 November workflow; the repository documentation was updated on 10 November 2026.
+**Independent GTM agent for English college-event campaigns.** Project documentation for the [GitHub repository](https://github.com/ghantaram4/LaunchPilot) and [Google Doc](https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY). Project URLs are collected in [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The sample and campaign measurements below describe the saved 8 November 2026 workflow.
 
 **Submission sample:** campaign `e71f3548-b1c2-4969-9841-396ef719c46d`, approved working version **5**, Northstar College Portfolio Lab. All event data is fictional; the example.org registration URL is a placeholder. No actual audience, engagement, registrations or campaign-performance results are claimed.
 
@@ -116,7 +116,7 @@ These are excerpts or faithful summaries of the actual development requests, not
 | Manual wording/eligibility corrections | Human edits revised LinkedIn/blog and made eligibility explicit; versions 2–4 are present in the audit | Review history retained; audit records edit timestamps and later version-4 approvals, but not every intermediate text body |
 | Exact version-5 correction | Insert the restriction sentence before “Register today”; delete only old Ad variation 2 copy while keeping “Explore portfolio structure…” | `Service.edit` used current guard 4, saved version 5, invalidated approvals and verified both changes without provider calls |
 | Final approval | Subsequent human actions approved version 5 and separately approved its export | Existing version-5 approval digests/timestamps verified; matching downloaded Markdown found |
-| Submission | Prepare documentation, a short demo script and a labelled sample of the approved export; no regeneration or publishing | This package; source/runtime separation and read-only campaign verification |
+| Documentation | Describe architecture, coding iterations, actual results and learnings; include the labelled approved export | Project write-up, source/runtime separation and read-only campaign verification |
 
 The runtime system prompt explicitly treats source documents/tool results as data, prohibits invented claims and approval by the model, and requires supporting source IDs/quotes. Content instructions ask for narrative copy plus application-rendered logistics. These instructions improve boundaries but do not establish semantic correctness: the model planner even proposed a testimonial-style quote not present in the source; no such quote is in the submitted sample. Model review did not remove the need for human checking.
 
@@ -218,4 +218,4 @@ The original local ZIP was prepared from an explicit source/artifact allowlist. 
 
 The repository excludes credentials, virtual environments, caches, private runtime databases/Chroma/uploads, logs and the local live-run marker. Fictional source extracts and the approved sample are deliberate inclusions. [VALIDATION.md](VALIDATION.md) preserves the earlier Aster implementation verification; the Northstar results above and [CAMPAIGN_RESULTS.json](submission/CAMPAIGN_RESULTS.json) are the current submission sample evidence.
 
-**Remaining delivery:** enable reviewer access to the [prepared Google Doc](https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY), record/upload the [under-five-minute demo](submission/DEMO.md), check reviewer access, and add the actual recording URL to [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The repository upload alone does not complete the submission. Follow the [delivery checklist](submission/CHECKLIST.md). No new provider calls, campaign edits or approvals were made for this documentation update.
+The repository, Google Doc and recording URL when available are listed in [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The recording entry remains empty until an actual recording is uploaded.
