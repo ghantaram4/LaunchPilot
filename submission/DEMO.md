@@ -1,5 +1,7 @@
 # LaunchPilot Project D recording script
 
+For opening the app, recording shortcuts, sharing and the final hand-in, use [RECORDING_STEPS.md](RECORDING_STEPS.md). The [Google Doc](https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY) is prepared; reviewer access still needs to be enabled. No video has been recorded by this preparation.
+
 **Target duration: 4 minutes 40 seconds**, leaving 20 seconds below the five-minute limit. This is a script, not a claim that a recording has been made. Narration is deliberately short; rehearse transitions and use a visible timer.
 
 **Only campaign:** `e71f3548-b1c2-4969-9841-396ef719c46d`, approved working version 5. Northstar College and its event are fictional; the registration URL is an example.org placeholder. No real audience or business result is claimed.
@@ -62,7 +64,7 @@
 
 ## 4:20–4:40 — Close with limits and deliverables
 
-**Screen:** `submission/CHECKLIST.md` and the source-package filenames. Show the real [GitHub repository](https://github.com/ghantaram4/LaunchPilot); keep Doc/video links marked pending until they exist.
+**Screen:** `submission/CHECKLIST.md`, the [GitHub repository](https://github.com/ghantaram4/LaunchPilot) and prepared Google Doc. Keep the recording link pending until the actual video is uploaded.
 
 **Say:** “This demonstrates one fictional campaign, not general accuracy or business performance. Source support, persistence and human approval are central; model review remains fallible. The submission includes the implementation, documented results, fictional source data and approved sample output. There is no sending or publishing integration.”
 

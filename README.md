@@ -4,7 +4,7 @@
 
 An independent implementation of **Project D — GTM Agent: Ideation to Copy**. LaunchPilot retrieves source evidence, plans a campaign, creates a LinkedIn post, promotional email, short blog and three ad variations, and sends the drafts through a separate review stage. A human decides what can be exported.
 
-[Approved fictional sample](submission/SAMPLE_OUTPUT_FICTIONAL_APPROVED_v5.md) · [Project write-up](SUBMISSION.md) · [Architecture](FRAMEWORK.md) · [Demo script](submission/DEMO.md) · [Submission checklist](submission/CHECKLIST.md)
+[Approved fictional sample](submission/SAMPLE_OUTPUT_FICTIONAL_APPROVED_v5.md) · [Project write-up](SUBMISSION.md) · [Google Doc](https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY) · [Architecture](FRAMEWORK.md) · [Demo script](submission/DEMO.md) · [Submission checklist](submission/CHECKLIST.md)
 
 ## What it does
 
@@ -192,8 +192,9 @@ It sends an unauthenticated HEAD, not a model request. An HTTP response confirms
 
 - [SUBMISSION.md](SUBMISSION.md): overview, implementation, coding prompts/iterations, results and learnings; source for the required Google Doc.
 - [DEMO.md](submission/DEMO.md): 4:40 recording script using saved results and labelled historical evidence.
+- [RECORDING_STEPS.md](submission/RECORDING_STEPS.md): open the app, record your screen and voice, check sharing, and finish the hand-in.
 - [Approved output](submission/SAMPLE_OUTPUT_FICTIONAL_APPROVED_v5.md) and [campaign results](submission/CAMPAIGN_RESULTS.json): unchanged evidence.
-- [Delivery links](submission/DELIVERY_LINKS.json) and [checklist](submission/CHECKLIST.md): repository available; actual Google Doc and recording links still pending.
+- [Delivery links](submission/DELIVERY_LINKS.json) and [checklist](submission/CHECKLIST.md): repository and Google Doc available; reviewer sharing and the recording link still need completion.
 
 The model reviewer missed semantic issues in this campaign. Human correction was part of the result. Scope is one English, same-day college event; there is no OCR, audience analytics, localization, web fact-checking or production deployment. The sample demonstrates a supervised prototype, not guaranteed copy quality or campaign effectiveness.
 

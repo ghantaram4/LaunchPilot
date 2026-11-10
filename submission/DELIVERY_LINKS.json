@@ -1,7 +1,8 @@
 {
   "repository": "https://github.com/ghantaram4/LaunchPilot",
-  "google_doc": null,
+  "google_doc": "https://docs.google.com/document/d/1dGvFRPIv6yKrwUkn7iQa7BankwdDTo1sDW9yBwPG-DY",
   "demo_recording": null,
-  "status": "Repository uploaded. Google Doc and recording links are pending.",
-  "recording_requirement": "At most five minutes; verify duration and reviewer access before submission."
+  "status": "Repository uploaded and Google Doc prepared. Recording URL and reviewer access checks are pending.",
+  "recording_requirement": "At most five minutes; verify duration and reviewer access before submission.",
+  "google_doc_access": "Private at creation; enable and verify reviewer access before submission."
 }
