@@ -28,7 +28,7 @@
 
 **Screen:** Briefly show `workflow.py` research/retrieve functions, then `CAMPAIGN_RESULTS.json` tool-call summary or the architecture section of `SUBMISSION.md`. Return to the four draft tabs.
 
-**Say:** “The research stage requested the real retrieve_sources tool. Chroma searched local MiniLM embeddings and returned three source chunks before planning. Planning checks facts and audience; missing or conflicting essentials can interrupt for clarification. Content drafts all four formats, and review can trigger one revision. This sample needed no fact clarification and used no automated revision.”
+**Say:** “I used Codex to build the scoped framework, implement the workflow and tests, diagnose failures, and save guarded edits. The research stage requested the real retrieve_sources tool. Chroma searched local MiniLM embeddings and returned three source chunks before planning. Planning checks facts and audience; missing or conflicting essentials can interrupt for clarification. Content drafts all four formats, and review can trigger one revision. This sample needed no fact clarification and used no automated revision.”
 
 **Label:** “Implemented clarification path; tested offline. Not a live clarification demonstration.”
 
@@ -62,7 +62,7 @@
 
 ## 4:20–4:40 — Close with limits and deliverables
 
-**Screen:** `submission/CHECKLIST.md` and the source-package filenames. Keep repository/Doc/video URLs marked pending until real links exist.
+**Screen:** `submission/CHECKLIST.md` and the source-package filenames. Show the real [GitHub repository](https://github.com/ghantaram4/LaunchPilot); keep Doc/video links marked pending until they exist.
 
 **Say:** “This demonstrates one fictional campaign, not general accuracy or business performance. Source support, persistence and human approval are central; model review remains fallible. The submission includes the implementation, documented results, fictional source data and approved sample output. There is no sending or publishing integration.”
 

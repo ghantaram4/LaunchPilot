@@ -1,6 +1,6 @@
 # Project D submission: LaunchPilot
 
-**Independent GTM agent for English college-event campaigns.** This is the source text for the required Google Doc. Repository, Google Doc and recording links remain pending in [submission/CHECKLIST.md](submission/CHECKLIST.md). No upload, push or publication was performed while preparing this package.
+**Independent GTM agent for English college-event campaigns.** This is the source text for the required Google Doc. The [GitHub repository](https://github.com/ghantaram4/LaunchPilot) is uploaded. The Google Doc and recording links remain pending in [submission/CHECKLIST.md](submission/CHECKLIST.md) and [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The sample and campaign measurements below describe the saved 8 November workflow; the repository documentation was updated on 10 November 2026.
 
 **Submission sample:** campaign `e71f3548-b1c2-4969-9841-396ef719c46d`, approved working version **5**, Northstar College Portfolio Lab. All event data is fictional; the example.org registration URL is a placeholder. No actual audience, engagement, registrations or campaign-performance results are claimed.
 
@@ -16,21 +16,23 @@ The working interface has upload and local extraction preview, explicit generati
 
 The stack is Python, Streamlit, LangChain, LangGraph, local persistent Chroma, sentence-transformers/all-MiniLM-L6-v2 and persistent SQLite LangGraph checkpoints. Application SQLite separately stores current working drafts, consent, approval audit and provider attempts/usage. This is an explicit graph with separate stages, rather than one generation prompt presented as several agents.
 
-```text
-Upload PDF/TXT brief + select one CSV event row
-  -> local extraction/preview -> explicit consent -> persisted campaign
-  -> research: model requests retrieve_sources
-  -> retrieve: execute local Chroma tool; retain matches and full-source audit
-  -> plan: facts, supporting quotes/IDs, audience, tone and approach
-  -> gate: validate essentials and source conflicts
-       -> clarification interrupt -> human answers -> gate
-       -> content: four formats -> model + deterministic review
-            -> if issues and no revision yet: one revision -> review again
-            -> finish: human review
-Any eligible stage failure -> persisted handoff -> explicit retry of that stage
-Human draft edits -> new working version -> invalidate both approvals
-Human content approval -> separate export approval -> local Markdown download
+```mermaid
+flowchart TD
+    A["Upload and local preview"] --> B["Consent and saved campaign"]
+    B --> C["Research requests retrieve_sources"]
+    C --> D["Chroma retrieval and source audit"]
+    D --> E["Plan and validate facts"]
+    E -->|"Questions"| F["Human clarification"]
+    F --> E
+    E -->|"Confirmed"| G["Four drafts"]
+    G --> H["Model and deterministic review"]
+    H -->|"Issues, first pass"| I["One revision"]
+    I --> H
+    H -->|"Finished"| J["Human review and content approval"]
+    J --> K["Separate export approval and download"]
 ```
+
+Recoverable stage failures persist a handoff for explicit retry of that stage. Saved human edits create a new working version and invalidate both approvals.
 
 The graph finish status remains `awaiting_human_review` even after approval because approvals live in application state. The verified approval records and their draft digests, rather than that graph status alone, establish the approval of working version 5.
 
@@ -202,16 +204,18 @@ Recorded development checks were 31 offline application checks, followed later b
 - The local CLI marker prevents another task-authorized demo workflow; it is not a global ban on a human creating a new campaign through the UI. This submission preparation created none and made no provider call.
 - Human approval confirms a reviewed version, not guaranteed quality. The final approval note still says wording could improve; this package preserves the approved text rather than silently polishing it after approval.
 
-## Repository and submission preparation
+## Repository and submission delivery
 
-Run locally from `D:\LaunchPilot`:
+The implementation and documentation are available at [ghantaram4/LaunchPilot](https://github.com/ghantaram4/LaunchPilot). Follow [README.md](README.md#run-locally) to install in a fresh clone. For the existing Windows environment, start from the repository folder:
 
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501
 ```
 
-Use a normal terminal for provider connectivity. For a fresh machine, install the pinned dependencies, prepare MiniLM, and set `NEBIUS_API_KEY` privately; do not copy another project's environment file. No secrets are required to read the submitted sample or documents.
+Use a normal terminal for provider connectivity. Set `NEBIUS_API_KEY` privately or explicitly configure a key file; a local `.env` is not loaded automatically. No credentials are required to read the saved sample and documents.
 
-`submission/LaunchPilot_GITHUB_READY.zip` is prepared from an explicit source/artifact allowlist with a SHA-256 manifest. It excludes credentials, virtual environments, caches, private runtime databases/Chroma/uploads, logs, the local live-run marker and the stale Aster review packet. The fictional source extracts and approved sample are deliberate inclusions. `VALIDATION.md`, if consulted in the source archive, is historical Aster implementation verification; the Northstar results above and `submission/CAMPAIGN_RESULTS.json` are the current submission evidence.
+The original local ZIP was prepared from an explicit source/artifact allowlist. It is ignored by Git and is not a current downloadable release. Its [original packaging manifest](submission/archive/GITHUB_FILES_PACKAGING_20261108.sha256) remains historical. The updated [repository-byte manifest](submission/GITHUB_FILES.sha256) records committed file bytes, excluding itself. Windows working-copy line-ending conversion can change local hashes.
 
-There is no Git repository/remote configured in this workspace yet. No commit, push, Google Doc creation, sharing change, recording upload or publication was performed. Follow [the remaining-link checklist](submission/CHECKLIST.md), use the [under-five-minute recording script](submission/DEMO.md), and replace local Markdown links with repository URLs when preparing the final Google Doc.
+The repository excludes credentials, virtual environments, caches, private runtime databases/Chroma/uploads, logs and the local live-run marker. Fictional source extracts and the approved sample are deliberate inclusions. [VALIDATION.md](VALIDATION.md) preserves the earlier Aster implementation verification; the Northstar results above and [CAMPAIGN_RESULTS.json](submission/CAMPAIGN_RESULTS.json) are the current submission sample evidence.
+
+**Remaining delivery:** create the Google Doc from this write-up, record/upload the [under-five-minute demo](submission/DEMO.md), check reviewer access, and add their actual URLs to [DELIVERY_LINKS.json](submission/DELIVERY_LINKS.json). The repository upload alone does not complete the submission. Follow the [delivery checklist](submission/CHECKLIST.md). No new provider calls, campaign edits or approvals were made for this documentation update.

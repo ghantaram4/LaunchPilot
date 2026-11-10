@@ -1,5 +1,7 @@
 # LaunchPilot verification — 8 November 2026 (Asia/Kolkata)
 
+> **Historical implementation verification: Aster campaign.** This document preserves the original test/run report, including its then-current handoff and approval state. It is not the final Northstar submission result. See [SUBMISSION.md](SUBMISSION.md#actual-results-for-this-campaign-only) and [CAMPAIGN_RESULTS.json](submission/CAMPAIGN_RESULTS.json) for the separate Northstar version-5 result. Current installation instructions are in [README.md](README.md#run-locally). These historical tests were not rerun for the repository documentation update.
+
 The application is implemented in `D:\LaunchPilot`. All writes, dependencies, source copies and campaign state remain in this workspace. The other project was used only for read-only discovery of its existing Nebius destination and the single credential line; no file in `D:\ReviewPilot_VSCode_Backend` was modified.
 
 Launch from PowerShell in `D:\LaunchPilot`:

@@ -1,5 +1,7 @@
 # LaunchPilot — Project D GTM agent
 
+This is the original agreed scope and acceptance framework. Historical references to one task-authorized live workflow describe the initial implementation task, not a measured success-rate claim. For the current setup and workflow diagram, see [README.md](README.md#architecture). For the later supervised Northstar result, manual corrections and live/offline distinctions, see [SUBMISSION.md](SUBMISSION.md).
+
 ## Agreed one-liner
 LaunchPilot is an independent, human-approved GTM agent that turns English college-event briefs and calendars into evidence-backed LinkedIn posts, promotional emails, short blogs and ad variations.
 
